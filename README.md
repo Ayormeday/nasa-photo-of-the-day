@@ -49,7 +49,7 @@ Follow these steps for completing your project.
 
 **Step 1 - Planning**
 
-- If you want, this is the time to make a simple design spec (look up ["simple wireframes"](https://www.google.com/search?q=simple+wireframes) to find resources & examples). **A pen & paper sketch (or outline) is often the fastest way to start your planning.**
+- If you want, this is the time to make a simple design spec (look up ["simple wireframes"](n) to find resources & examples). **A pen & paper sketch (or outline) is often the fastest way to start your planning.**
 - Once you have a design plan in mind, break down the designs into individual components.
 - Plan which components will hold state, what data each needs from props (if any), and where you will be making your data fetch.
 - Now it's time to jump into the code!
@@ -64,6 +64,11 @@ Follow these steps for completing your project.
 - In `App.js` (or where ever you wanted to fetch the data) add state for the data you'll be getting from NASA.
 - Add an effect hook to handle the API call side effect.
 - Go to the [NASA APOD API docs](https://api.nasa.gov/api.html#apod) and read through the docs to see how to make the API call.
+
+to get API call from NASA
+GET https://api.nasa.gov/planetary/apod
+https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY
+
 - You don't _need_ an API key. However you may need one if you exceed the API request limits.
 - Using the endpoint given, fetch the data using `axios`.
 - In your `.then()` make sure to `console.log` the response so you can look at the shape of the data. 😃
