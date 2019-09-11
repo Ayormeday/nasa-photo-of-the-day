@@ -1,7 +1,7 @@
 import React from "react";
 
-function Top({ title }) {
+function Title({ title }) {
   return <h1>{title}</h1>;
 }
 
-export default Top;
+export default Title;
