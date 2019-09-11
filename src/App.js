@@ -3,9 +3,8 @@ import axios from "axios";
 import "./App.css";
 import Title from "./header/Title";
 import Date from "./header/Date";
+import Explanation from "./body/Explanation";
 
-
-const testApi = "https://lambda-github-api-server.herokuapp.com/";
 const functionalApi = "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY";
 
 function App() {
@@ -13,7 +12,7 @@ function App() {
 
   useEffect(() => {
     axios
-      .get(testApi)
+      .get(functionalApi)
       .then(resImages => {
         setimage(resImages.data);
         console.log(resImages.data);
@@ -28,8 +27,8 @@ function App() {
       <Title title={images.title} />
       <Date date={images.date} />
       <img src={images.hdurl} />
-
-      <p>{images.explanation}</p>
+      <Explanation explanation={images.explanation} />
+      <small>&copy;{images.copyright}</small>
     </div>
   );
 }
