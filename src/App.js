@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react";
 import axios from 'axios';
 import "./App.css";
-import Top from "./body/Top"
+import Title from "./body/Title"
 
 const testApi = "https://lambda-github-api-server.herokuapp.com/"
 const functionalApi = "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY"
@@ -28,7 +28,7 @@ useEffect(() => {
         Read through the instructions in the README.md file to build your NASA
         app! Have fun 🚀!
       </p>
-      <Top title={images.title}/>
+      <Title title={images.title}/>
       <p>{images.explanation}</p>
     </div>
   );
