@@ -6,7 +6,6 @@ const DefaultStyle = styled.h1`
   margin: 0.2rem;
   margin-right: 2rem;
   margin-left:2rem;
-  border: 0.2rem solid grey;
   border-radius: 0.4rem;
   padding: 4rem 2rem;
   font-size: 5rem;
@@ -18,7 +17,8 @@ const DefaultStyle = styled.h1`
   @media (max-width: 50rem) {
     color: white;
     font-size: 3rem;
-    padding-top: 5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 `;
 
