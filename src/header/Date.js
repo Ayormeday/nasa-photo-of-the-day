@@ -1,7 +1,12 @@
 import React from "react";
+import styled from "styled-components";
+
+const DateStyle = styled.h3`
+  color: #19506a;
+`;
 
 function Date({ date }) {
-  return <h3>{date}</h3>;
+  return <DateStyle>{date}</DateStyle>;
 }
 
 export default Date;

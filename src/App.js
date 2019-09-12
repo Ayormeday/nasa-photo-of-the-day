@@ -4,15 +4,16 @@ import "./App.css";
 import Title from "./header/Title";
 import Date from "./header/Date";
 import Explanation from "./body/Explanation";
+import Img from "./body/img"
 
-const functionalApi = "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY";
-
+// const functionalApi = "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY";
+const testApi = "https://lambda-github-api-server.herokuapp.com/";
 function App() {
   const [images, setimage] = useState({});
 
   useEffect(() => {
     axios
-      .get(functionalApi)
+      .get(testApi)
       .then(resImages => {
         setimage(resImages.data);
         console.log(resImages.data);
@@ -26,7 +27,7 @@ function App() {
     <div className="App">
       <Title title={images.title} />
       <Date date={images.date} />
-      <img src={images.hdurl} />
+      <Img img={images.hdurl} />
       <Explanation explanation={images.explanation} />
       <small>&copy;{images.copyright}</small>
     </div>
