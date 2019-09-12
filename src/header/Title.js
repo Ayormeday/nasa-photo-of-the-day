@@ -5,7 +5,7 @@ import image from "../img/image4.png";
 const DefaultStyle = styled.h1`
   margin: 0.2rem;
   margin-right: 2rem;
-  margin-left:2rem;
+  margin-left: 2rem;
   border-radius: 0.4rem;
   padding: 4rem 2rem;
   font-size: 5rem;

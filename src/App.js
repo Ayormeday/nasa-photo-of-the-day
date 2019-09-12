@@ -4,7 +4,7 @@ import "./App.css";
 import Title from "./header/Title";
 import Date from "./header/Date";
 import Explanation from "./body/Explanation";
-import Img from "./body/img"
+import Img from "./body/img";
 
 // const functionalApi = "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY";
 const testApi = "https://lambda-github-api-server.herokuapp.com/";

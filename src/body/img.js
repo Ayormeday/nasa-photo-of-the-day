@@ -3,8 +3,8 @@ import styled from "styled-components";
 
 const ImgStyled = styled.img`
   width: 50rem;
-  @media (max-width: 50rem){
-      width:25rem;
+  @media (max-width: 50rem) {
+    width: 25rem;
   }
 `;
 
